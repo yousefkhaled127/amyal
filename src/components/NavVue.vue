@@ -39,7 +39,7 @@
             class="popup-header"
             :class="{ activepopup: handleHeader }"
           >
-            <ul class="links">
+            <ul class="links" @click.stop="console.log(1)">
               <li>
                 <router-link to="/">
                   <h6 :class="props.activehome">الرئيسية</h6>
