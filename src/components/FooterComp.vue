@@ -11,16 +11,12 @@
           <div class="col-lg-4">
             <ul class="links-foot">
               <li><h5>روابط سريعة</h5></li>
-              <li><a href="http://localhost:8080/">الرئسيه</a></li>
+              <li><router-link to="/">الرئسيه</router-link></li>
               <li>
-                <a href="http://localhost:8080/ComPlaints"
-                  >الشكاوي والمقترحات</a
-                >
+                <router-link to="/ComPlaints">الشكاوي والمقترحات</router-link>
               </li>
               <li>
-                <a href="http://localhost:8080/TermsConditions"
-                  >الشروط والاحكام</a
-                >
+                <router-link to="/TermsConditions">الشروط والاحكام</router-link>
               </li>
             </ul>
           </div>

@@ -67,24 +67,24 @@
             <DropdownNav />
           </div>
 
-          <a
+          <RouterLink
             v-if="login"
-            href="http://localhost:8080/LoginUser"
+            to="/LoginUser"
             class="button-header button-header-inner"
           >
             <p class="text-sigin">تسجيل دخول</p>
-          </a>
+          </RouterLink>
           <div class="buttons-inner">
             <div class="dropdown-content dropdown-content-show" v-if="sigin">
               <DropdownNav />
             </div>
-            <a
+            <router-link
               v-if="login"
-              href="http://localhost:8080/LoginUser"
+              to="/LoginUser"
               class="button-header button-bracket"
             >
               <fa icon="right-from-bracket" />
-            </a>
+            </router-link>
             <button
               :class="{ btnexit_links: handleHeader }"
               class="btn-show-links"
@@ -104,6 +104,7 @@
 <script setup>
 import { ref, defineProps } from "vue";
 import DropdownNav from "./DropdownNav.vue";
+import { RouterLink } from "vue-router";
 const handleHeader = ref(false);
 const activelanguage = ref(false);
 const props = defineProps({
